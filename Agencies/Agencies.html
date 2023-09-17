@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <div class="overflow-hidden" style="height: 100vh; background: #F8F8F8;">
+    <div class="bg-white w-full flex items-center justify-between p-4">
+      <div class="ml-4 border flex items-center justify-center rounded" style="width: 40px; height: 40px;">
+        <a href="."><i class="fa-solid fa-arrow-left"></i></a>
+        <!-- back icon -->
+      </div>
+      <div class="flex items-center">
+        <input type="text" id="contact" class="border rounded px-4 py-2 text-sm outline-none" placeholder="Search"
+          style="width: 300px;" />
+
+        <!-- filter -->
+        <div class="ml-4 border flex items-center justify-center rounded" style="width: 40px; height: 40px;">
+
+
+          <button id="dropdownDefaultButton" class="outline-none" data-dropdown-toggle="dropdown" type="button"><i
+              class="fa-solid fa-filter outline-none"></i></button>
+          <!-- Dropdown menu -->
+          <div id="dropdown"
+            class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDefaultButton">
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Domain</a>
+              </li>
+              <li>
+                <a href="#"
+                  class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Location</a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <div class="p-4">
+      <span class="text-2xl mb-4">Rescue Agencies</span>
+      <div class="relative overflow-x-auto shadow-md sm:rounded-lg mt-4">
+        <table class="w-full text-sm text-left text-gray-500 dark:text-gray-400">
+          <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+              <th scope="col" class="px-6 py-3">
+                Name
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Email
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Helpline number
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Location
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Domain
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Alert
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                United way
+              </th>
+              <td class="px-6 py-4">
+                united.way@gmail.com
+              </td>
+              <td class="px-6 py-4">
+                +91 81037766779
+              </td>
+              <td class="px-6 py-4">
+                Jabalpur
+              </td>
+              <td class="px-6 py-4 flex flex-wrap">
+                <span class="bg-gray-400 text-gray-700 p-2 px-4 rounded-full mr-1">Medical</span>
+                <span class="bg-gray-400 text-gray-700 p-2 px-4 rounded-full mr-1">Fire</span>
+                <span class="bg-gray-400 text-gray-700 p-2 px-4 rounded-full mr-1">Food</span>
+              </td>
+              <td class="px-6 py-4">
+                <button class="text-sky-400">Send alert</button>
+              </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                United way
+              </th>
+              <td class="px-6 py-4">
+                united.way@gmail.com
+              </td>
+              <td class="px-6 py-4">
+                +91 81037766779
+              </td>
+              <td class="px-6 py-4">
+                Jabalpur
+              </td>
+              <td class="px-6 py-4 flex flex-wrap">
+                <span class="bg-gray-400 text-gray-700 p-2 px-4 rounded-full mr-1">Medical</span>
+                <span class="bg-gray-400 text-gray-700 p-2 px-4 rounded-full mr-1">Fire</span>
+                <span class="bg-gray-400 text-gray-700 p-2 px-4 rounded-full mr-1">Food</span>
+              </td>
+              <td class="px-6 py-4">
+                <button class="text-sky-400">Send alert</button>
+              </td>
+            </tr>
+            <tr class="bg-white border-b dark:bg-gray-900 dark:border-gray-700">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                United way
+              </th>
+              <td class="px-6 py-4">
+                united.way@gmail.com
+              </td>
+              <td class="px-6 py-4">
+                +91 81037766779
+              </td>
+              <td class="px-6 py-4">
+                Jabalpur
+              </td>
+              <td class="px-6 py-4 flex flex-wrap">
+                <span class="bg-gray-400 text-gray-700 p-2 px-4 rounded-full mr-1">Medical</span>
+                <span class="bg-gray-400 text-gray-700 p-2 px-4 rounded-full mr-1">Fire</span>
+                <span class="bg-gray-400 text-gray-700 p-2 px-4 rounded-full mr-1">Food</span>
+              </td>
+              <td class="px-6 py-4">
+                <button class="text-sky-400">Send alert</button>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://kit.fontawesome.com/d5f22ee4f8.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.1/flowbite.min.js"></script>
+
+</body>
+
+</html>

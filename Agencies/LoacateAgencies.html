@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Location Details</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  </head>
+  <body>
+    <div class="search">
+      <div class="input-search">
+        <label for="placeName">Enter a Place Name:</label><br />
+        <input type="text" id="placeName" />
+      </div>
+      <div class="btn">
+        <button id="searchPlacesBtn">Search Places</button>
+      </div>
+    </div>
+    <div id="locationDetails">
+      <h2>Location Details</h2>
+      <p id="placeNameDetails"></p>
+      <p id="cityDetails"></p>
+      <p id="distanceDetails"></p>
+      <p id="otherDetails"></p>
+    </div>
+    <div id="map" style="height: 400px"></div>
+    <div id="placesList">
+      <h2>Nearby Places</h2>
+      <ul id="placesUL"></ul>
+      <h2>Search Places Inside</h2>
+      <input type="text" id="placeNameInside" />
+      <button id="searchInsideBtn">Search Inside</button>
+      <ul id="insidePlacesUL"></ul>
+    </div>
+    <script src="Agencies.js"></script>
+  </body>
+</html>

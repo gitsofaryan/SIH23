@@ -1,0 +1,17 @@
+{
+    "agencies": [
+        {
+            "name": "Rescue Agency 1",
+            "domain": "Search and Rescue",
+            "contact": "123-456-7890",
+            "location": "Latitude: 12.34, Longitude: 56.78"
+        },
+        {
+            "name": "Rescue Agency 2",
+            "domain": "Medical Aid",
+            "contact": "987-654-3210",
+            "location": "Latitude: 34.56, Longitude: 78.90"
+        }
+        
+    ]
+}

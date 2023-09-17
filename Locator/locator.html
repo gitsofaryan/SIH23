@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alkatra&family=Caprasimo&family=Dancing+Script:wght@700&family=Lugrasimo&family=Open+Sans:ital,wght@1,800&family=Preahvihear&family=Ubuntu:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+    />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+  </head>
+
+  <body>
+    <div class="display">
+      <div id="locationDetails">
+        <h2>Location Details</h2>
+        <p id="placeNameDetails"></p>
+        <p id="cityDetails"></p>
+        <p id="distanceDetails"></p>
+        <p id="otherDetails"></p>
+      </div>
+      <div class="name">
+        <img
+          src="https://o.remove.bg/downloads/4416abd6-ce0b-46a0-b645-e6867d74e9a3/image-removebg-preview.png"
+          alt=""
+        />
+      </div>
+      <div class="search">
+        <div class="input-search">
+          <label for="placeName">Enter a Place Name:</label><br />
+          <input type="text" id="placeName" />
+        </div>
+        <div class="btn">
+          <button id="searchPlacesBtn">Search Places</button>
+        </div>
+      </div>
+    </div>
+    <br />
+    <div class="container2">
+      <div id="map"></div>
+      <div id="placesList">
+        <h2>Nearby Places</h2>
+        <ul id="placesUL"></ul>
+        <h2>Search Places Inside</h2>
+        <input type="text" id="placeNameInside" />
+        <button id="searchInsideBtn">Search Inside</button>
+        <ul id="insidePlacesUL"></ul>
+      </div>
+    </div>
+    <script src="locator.js"></script>
+  </body>
+</html>
